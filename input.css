@@ -6,9 +6,22 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-image: url('../images/bg-header-desktop.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: url('../images/bg-header-mobile.png');
+  }
+}
+
 @layer base {
   h3 {
-    @apply text-[32px] md:text-[46px] font-semibold text-darkGrayishBlue mb-4 md:mb-5;
+    @apply text-[28px] md:text-[36px] font-semibold text-darkGrayishBlue mb-4 md:mb-[19px];
   }
 
   h5 {
